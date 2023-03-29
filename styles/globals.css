@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @layer base {
+  body {
+    @apply font-fira;
+  }
+} */
+
 html {
   scroll-behaivor: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.custom-img {
+  background-image: url("https://images.unsplash.com/photo-1497384401032-2182d2687715?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
 }

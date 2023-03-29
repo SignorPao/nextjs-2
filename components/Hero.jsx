@@ -1,20 +1,15 @@
 import React from "react";
 
-const Hero = () => {
+const Hero = ({ heading, message }) => {
   return (
-    <div className="w-screen h-screen">
-      <div className="w-full h-full flex items-center justify-center flex-col">
-        <h1 className="text-red-500 font-bold text-7xl font-fira">Hero</h1>
-        <p className="text-2xl text-center max-w-screen-md font-inter">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
-          voluptates porro odio iusto blanditiis atque eos aspernatur
-          necessitatibus corporis pariatur.
-        </p>
-        <p className="text-2xl text-center max-w-screen-md text-blue-500 font-fira">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
-          voluptates porro odio iusto blanditiis atque eos aspernatur
-          necessitatibus corporis pariatur.
-        </p>
+    <div className="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img font-fira">
+      {/* overlay */}
+      <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/50 z-[2]" />
+
+      <div className="p-5 text-white z-[2] -mt-[10rem] -ml-[10rem]">
+        <h2 className="text-5xl font-bold">{heading}</h2>
+        <p className="py-5 text-xl">{message}</p>
+        <button className="px-8 py-2 border font-inter">Book</button>
       </div>
     </div>
   );
