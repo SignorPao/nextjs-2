@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
-  body {
-    @apply font-fira;
-  }
-} */
+@layer base {
+ .navLink {
+  @apply text-xl ease-in duration-150 font-medium text-teal-900 hover:text-white;
+ }
+}
 
 html {
   scroll-behaivor: smooth;
