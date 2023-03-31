@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <div className="max-w-[1240px] m-auto px-4 py-16 text-center">
-      <h1 className="title">Let&apos;s work together</h1>
+      <h1 className="title">Lets work together</h1>
       <form className="max-w-[600px] m-auto">
         <div className="grid grid-cols-2 gap-2">
           <input
