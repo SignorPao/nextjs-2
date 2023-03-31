@@ -1,7 +1,10 @@
 import Head from "next/head";
 
-// import components
 import Hero from "@/components/Hero";
+import Slider from "@/components/Slider";
+import Instagram from "@/components/Instagram";
+
+import { sliderData } from "@/data/sliderData";
 
 export default function Home() {
   return (
@@ -17,6 +20,10 @@ export default function Home() {
         heading="Mark Powell Photography"
         message="I capture moments in nature and keep them alive."
       />
+
+      <Slider slides={sliderData} />
+
+      <Instagram />
     </>
   );
 }

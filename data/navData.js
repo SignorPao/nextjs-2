@@ -12,7 +12,7 @@ export const navData = [
   {
     id: 3,
     link: "Work",
-    href: "/portfolio",
+    href: "/work",
   },
   {
     id: 4,

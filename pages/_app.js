@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 import { Inter, Fira_Code } from "next/font/google";
 
@@ -12,6 +13,7 @@ export default function App({ Component, pageProps }) {
     <main className={`${inter.variable} ${fira.variable} font-sans`}>
       <Navbar />
       <Component {...pageProps} />
+      <Footer />
     </main>
   );
 }

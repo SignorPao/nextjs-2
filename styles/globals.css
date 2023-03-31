@@ -3,9 +3,18 @@
 @tailwind utilities;
 
 @layer base {
- .navLink {
-  @apply text-xl ease-in duration-150 font-medium text-teal-900 hover:text-white;
- }
+  .navLink {
+    @apply text-xl ease-in duration-150 font-medium hover:text-yellow-300;
+  }
+  .title {
+    @apply text-2xl lg:text-4xl font-bold font-fira py-4;
+  }
+  .btn {
+    @apply px-8 py-2 border font-inter ease-in duration-150 hover:bg-yellow-300 hover:border-yellow-300 hover:text-teal-900 font-medium;
+  }
+  .lock {
+    @apply overflow-hidden;
+  }
 }
 
 html {
